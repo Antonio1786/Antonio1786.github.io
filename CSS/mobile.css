@@ -1,0 +1,25 @@
+:root{
+    font-size: 12px;
+    --miColor: pink;
+}
+body{
+    font-size: 10px;
+}
+.mi-contenedor{
+    background-color: var(--miColor);
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    grid-gap:3rem;
+    grid-template-rows:repeat(2,350px);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.first{
+    font-size: 1em;
+}
+@media(max-width:500px) and (orientation:landscape){
+    .mi-contenedor{
+        background-color: aqua;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: max-content;
+    }
+}
